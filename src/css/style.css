@@ -37,7 +37,7 @@ nav{
   text-decoration: none;
   margin-left: -10px;
 }
- 
+
 
 .subheader{
   position: absolute;
@@ -171,7 +171,7 @@ nav{
 }
 
 
-.reasons .label{
+.label{
   display: flex;
   width: 113px;
   height: 24px;
@@ -188,7 +188,7 @@ nav{
   text-transform: uppercase;
 }
 
-.reasons .reasons_header{
+.title{
   margin-top: 33px;
   margin-bottom: 16px;
   color: #222;
@@ -220,4 +220,3 @@ nav{
   width: 371px;
   margin-bottom: 26px;
 }
-
