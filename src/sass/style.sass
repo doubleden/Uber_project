@@ -1,7 +1,18 @@
+$main_color: #1EACC7
+$conditions_blue: #1CA8C3
+$conditions_red: #FF5656
 *
     font-family: 'Roboto', sans-serif
 header
     position: relative
+
+=btn_hover
+    &:hover
+        background-image: none
+        background-color: black
+        transition: 0.9s
+
+
 nav
     height: 53px
     background-color: #212121
@@ -59,6 +70,8 @@ nav
         font-style: normal
         font-weight: 400
         text-transform: uppercase
+        +btn_hover
+
 .subheader_callback
     .descrp
         display: block
@@ -120,6 +133,7 @@ nav
         font-style: normal
         font-weight: 400
         text-transform: uppercase
+        +btn_hover
 .reasons
     min-height: 849px
     padding: 20px 0 64px 0
@@ -182,6 +196,11 @@ nav
     text-transform: uppercase
     &_white
         color: white
+    &_mb1
+        margin-bottom: 1px
+    &_mb37
+        margin-bottom: 37px
+
 
 .subtitle
     text-align: center
@@ -243,6 +262,32 @@ nav
             left: 50%
             transform: translateX(-50%)
             cursor: pointer
+            &::before
+                content: ''
+                position: absolute
+                display: block
+                bottom: 50%
+                width: 14px
+                height: 2px
+                background-color: $main_color
+                transition: 0.5s
+            &::after
+                content: ''
+                position: absolute
+                display: block
+                left: 50%
+                transform: translateX(-50%)
+                width: 2px
+                height: 14px
+                background-color: $main_color
+                transition: 0.5s
+
+            &:hover
+                &::before, &::after
+                    background-color: yellow
+
+
+
 
 .prius
     min-height: 899px
@@ -263,3 +308,55 @@ nav
         line-height: 1.41
         text-align: center
         color: #222
+
+.condition
+    padding: 68px 0 90px 0
+    &_block
+        margin-bottom: 61px
+    &_block_mb265
+        margin-bottom: 265px
+    &_title
+        color: #1CA8C3
+        font-size: 22px
+        font-style: normal
+        font-weight: 400
+        line-height: 24px
+        margin-bottom: 20px
+
+    &_list
+        list-style-type: none
+        padding-left: 51px
+        li
+            position: relative
+            color: #222
+            font-size: 17px
+            font-style: normal
+            font-weight: 300
+            line-height: 24px
+            margin-bottom: 10px
+            &::before
+                content: ''
+                display: block
+                position: absolute
+                left: -32px
+                top: 3px
+                width: 21px
+                height: 20px
+                background: url(../icons/Rectangle.png), 0px 0px / 100% 100% no-repeat
+                transform: translate(-5px , -1px)
+    &_descrp
+        color: #1CA8C3
+        font-size: 17px
+        font-style: normal
+        font-weight: 300
+        line-height: 24px
+        margin-top: 25px
+
+.condition_block_red
+    margin-bottom: 0
+    .condition_title
+        color: $conditions_red
+    .condition_list
+        li
+            &::before
+                background: url(../icons/Rectangle_red.png), 0px 0px / 100% 100% no-repeat
