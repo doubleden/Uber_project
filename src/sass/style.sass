@@ -360,3 +360,104 @@ nav
         li
             &::before
                 background: url(../icons/Rectangle_red.png), 0px 0px / 100% 100% no-repeat
+
+.world
+    padding: 50px 0 21px 0
+    min-height: 720px
+    background: url('../img/bg/world_bg.png') center center/cover no-repeat
+    &_cities
+        display: block
+        margin: 485px auto 0 auto
+        height: 18px
+        width: 223px
+        color: #1FBAD6
+        text-align: center
+        font-size: 15px
+        font-style: normal
+        font-weight: 400
+        text-transform: uppercase
+        text-decoration: none
+
+footer
+    position: relative
+    height: 155px
+    padding: 12px 0 37px 0
+    .line
+        display: block
+        margin: 0 auto
+        width: 301px
+        height: 5px
+        background-color: #1FBAD6
+    .stores
+        position: absolute
+        display: block
+        bottom: 77px
+        right: 21px
+        a
+            cursor: pointer
+            img
+                height: 27px
+                width: 94px
+
+=content_center
+    display: flex
+    justify-content: space-between
+
+    .social_icons
+        +content_center
+        width: 160px
+        bottom: 77px
+        left: 21px
+        position: absolute
+        &_sphere
+            display: block
+            width: 35px
+            height: 35px
+            border-radius: 100%
+            padding: 6px
+            background-color: #000
+            a
+                img
+                    display: block
+                    margin: 3.5px auto
+                    width: 16px
+                    height: 16px
+
+
+    .links_redirection
+        display: block
+        margin: 33px auto
+        width: 390px
+        &_main
+            &_item
+                +content_center
+                a
+                    color: #070716
+                    font-size: 15px
+                    font-style: normal
+                    font-weight: 300
+                    text-transform: uppercase
+                    text-decoration: none
+        &_sub
+            &_item
+                +content_center
+                a
+                    margin-top: 10px
+                    color: #999
+                    font-size: 11px
+                    font-style: normal
+                    font-weight: 300
+                    text-transform: uppercase
+                    text-decoration: none
+        &_lenguage
+            display: flex
+            justify-content: center
+            a
+                margin-top: 11px
+                color: #1FBAD6
+                text-align: center
+                font-size: 11px
+                font-style: normal
+                font-weight: 400
+                text-transform: uppercase
+                text-decoration: none
