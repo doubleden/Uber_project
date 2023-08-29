@@ -134,37 +134,66 @@ nav
         font-weight: 400
         text-transform: uppercase
         +btn_hover
+// .reasons
+//     min-height: 849px
+//     padding: 20px 0 64px 0
+//     .reasons_sphere
+//         display: flex
+//         justify-content: center
+//         align-items: center
+//         margin: 0px auto
+//         width: 113px
+//         height: 113px
+//         background-color: #1EACC7
+//         border-radius: 100%
+//     .reasons_blocks
+//         .reasons_subheader
+//             display: block
+//             color: #1EACC7
+//             font-size: 17px
+//             font-style: normal
+//             font-weight: 400
+//             line-height: 21px
+//             width: 371px
+//             margin-bottom: 0.5px
+//         .reasons_desrp
+//             display: block
+//             color: #202020
+//             font-size: 15px
+//             font-style: normal
+//             font-weight: 300
+//             line-height: 21px
+//             width: 371px
+//             margin-bottom: 26px
 .reasons
     min-height: 849px
     padding: 20px 0 64px 0
-    .reasons_sphere
+.reasons .reasons_block
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 35px
+    .reasons_round
         display: flex
         justify-content: center
         align-items: center
-        margin: 0px auto
+        margin-right: 26px
         width: 113px
         height: 113px
-        background-color: #1EACC7
+        background-color: $main-color
         border-radius: 100%
-    .reasons_blocks
-        .reasons_subheader
-            display: block
-            color: #1EACC7
-            font-size: 17px
-            font-style: normal
-            font-weight: 400
+    .reasons_descr
+        width: 343px
+        .reasons_subtitle
             line-height: 21px
-            width: 371px
-            margin-bottom: 0.5px
-        .reasons_desrp
-            display: block
+            color: $main-color
+            font-size: 17px
+            font-weight: 400
+        .reasons_text
             color: #202020
             font-size: 15px
-            font-style: normal
             font-weight: 300
             line-height: 21px
-            width: 371px
-            margin-bottom: 26px
 .label
     display: flex
     width: 113px
@@ -378,6 +407,9 @@ nav
         text-transform: uppercase
         text-decoration: none
 
+=content_center
+    display: flex
+    justify-content: space-between
 footer
     position: relative
     height: 155px
@@ -398,32 +430,29 @@ footer
             img
                 height: 27px
                 width: 94px
-
-=content_center
-    display: flex
-    justify-content: space-between
-
     .social_icons
         +content_center
         width: 160px
-        bottom: 77px
+        bottom: 75px
         left: 21px
         position: absolute
         &_sphere
-            display: block
+            display: flex
+            justify-content: center
+            align-items: center
             width: 35px
             height: 35px
             border-radius: 100%
             padding: 6px
             background-color: #000
             a
-                img
-                    display: block
-                    margin: 3.5px auto
+                text-decoration: none
+                span
+                    display: flex
+                    justify-content: center
+                    align-items: center
                     width: 16px
                     height: 16px
-
-
     .links_redirection
         display: block
         margin: 33px auto
