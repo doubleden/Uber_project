@@ -16,7 +16,7 @@
     <header>
         <nav>
             <div class="container">
-                <ul class="menu fixed-top menu_active">
+                <ul class="menu fixed-top">
                     <li class="menu_item"><a href="#" class="menu_link">Главная</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">Со своим автомобилем</a></li>
                     <li class="menu_item"><a href="#" class="menu_link">На автомобиле компании</a></li>
@@ -25,22 +25,30 @@
                     <li class="menu_item"><a href="#" class="menu_link_last">Оставить заявку</a></li>
                 </ul>
             </div>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
         </nav>
         <div class="subheader" >
             <div class="container">
                 <div class="row">
-                    <div class="col-md-4 offset-md-1">
+                    <div class="col-6 col-md-4 offset-md-1">
                         <a href="#" class="img_uber"><img src="/src/img/Uber.png" alt="uber_png"></a>
                         <div class="subheader_logo_desrp">Официальный партнер Uber в Москве</div>
                     </div>
-                    <div class="col-md-3 offset-md-1 col-xl-2 offset-xl-2">
+                    <div class="xs-hidden col-md-3 offset-md-1 col-xl-2 offset-xl-2">
                         <div class="subheader_callback">
                             <div class="descrp">Звоните нам ежедневно</div>
                             <a href="+74957970988" class="num">8 495 797 09 88</a>
                         </div>
                     </div>
-                    <div class="col-md-3 col-lg-2">
+                    <div class="col-6 col-md-3 col-lg-2">
+                        <a href="+74957970988" class="xs-visible num">8 495 797 09 88</a>
+                        <div class="phone">
                         <button class="subheader_btn">заказать звонок</button>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -294,47 +302,48 @@
         </container>
     </section>
     <footer>
-        <div class="line"></div>
-        <div class="social_icons">
-            <div class="social_icons_sphere">
-                <a href="#"><span class="icon-facebook"></span></a>
-            </div>
-            <div class="social_icons_sphere">
-                <a href="#"><span class="icon-twitter"></span></a>
-            </div>
-            <div class="social_icons_sphere">
-                <a href="#"><span class="icon-linkedin"></span></a>
-            </div>
-            <div class="social_icons_sphere">
-                <a href="#"><span class="icon-instagram"></span></a>
-            </div>
-        </div>
-        <div class="links_redirection">
-            <div class="links_redirection_main">
-                <div class="links_redirection_main_item">
-                    <a href="#">на главную</a>
-                    <a href="#">города</a>
-                    <a href="#">для водителей</a>
+            <div class="line"></div>
+            <div class="social_icons">
+                <div class="social_icons_sphere">
+                    <a href="#"><span class="icon-facebook"></span></a>
+                </div>
+                <div class="social_icons_sphere">
+                    <a href="#"><span class="icon-twitter"></span></a>
+                </div>
+                <div class="social_icons_sphere">
+                    <a href="#"><span class="icon-linkedin"></span></a>
+                </div>
+                <div class="social_icons_sphere">
+                    <a href="#"><span class="icon-instagram"></span></a>
                 </div>
             </div>
-            <div class="links_redirection_sub">
-                <div class="links_redirection_sub_item">
-                    <a href="#">центр поддержки</a>
-                    <a href="#">вакансии</a>
-                    <a href="#">разработчики</a>
-                    <a href="#">блог</a>
-                    <a href="#">о нас</a>
+            <div class="links_redirection">
+                <div class="links_redirection_main">
+                    <div class="links_redirection_main_item">
+                        <a href="#">на главную</a>
+                        <a href="#">города</a>
+                        <a href="#">для водителей</a>
+                    </div>
+                </div>
+                <div class="links_redirection_sub">
+                    <div class="links_redirection_sub_item">
+                        <a href="#">центр поддержки</a>
+                        <a href="#">вакансии</a>
+                        <a href="#">разработчики</a>
+                        <a href="#">блог</a>
+                        <a href="#">о нас</a>
+                    </div>
+                </div>
+                <div class="links_redirection_lenguage">
+                    <a href="#">русский</a>
                 </div>
             </div>
-            <div class="links_redirection_lenguage">
-                <a href="#">русский</a>
+            <div class="stores">
+                <a href="#"><img src="/src/icons/appstore.png" alt="apple"></a>
+                <a href="#"><img src="/src/icons/googleplay.png" alt="google"></a>
+                <a href="#"><img src="/src/icons/windowsstore.png" alt="windows"></a>
             </div>
-        </div>
-        <div class="stores">
-            <a href="#"><img src="/src/icons/appstore.png" alt="apple"></a>
-            <a href="#"><img src="/src/icons/googleplay.png" alt="google"></a>
-            <a href="#"><img src="/src/icons/windowsstore.png" alt="windows"></a>
-        </div>
     </footer>
+    <script src="js/script.js"></script>
 </body>
 </html>
