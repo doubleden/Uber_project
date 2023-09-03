@@ -1,3 +1,3 @@
 .DS_Store
 .gitignore
-sass
+src/sass/
